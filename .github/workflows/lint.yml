@@ -1,0 +1,11 @@
+name: lint
+on: push
+jobs:
+  lint-flake8:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: make install
+      - name: Run Flake8 linter
+        run: make lint-flake8

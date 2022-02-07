@@ -4,6 +4,11 @@ install:
 uninstall:
 	python -m pip uninstall hexlet-code
 
+lint: lint-flake8
+
+lint-flake8:
+	poetry run flake8 brain_games
+
 build:
 	poetry build
 
