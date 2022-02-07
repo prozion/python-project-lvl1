@@ -4,6 +4,9 @@ install:
 uninstall:
 	python -m pip uninstall hexlet-code
 
+setup:
+	poetry install
+
 lint: lint-flake8
 
 lint-flake8:
