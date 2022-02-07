@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install modules
-        run: make install
+      - name: Install dependencies
+        run: |
+          pip install poetry
+          make install
       - name: Run Flake8 linter
         run: make lint-flake8
