@@ -1,7 +1,7 @@
-package-install:
-	python -m pip install dist/*.whl
+install:
+	python -m pip install --force-reinstall dist/*.whl
 
-package-uninstall:
+uninstall:
 	python -m pip uninstall hexlet-code
 
 build:
