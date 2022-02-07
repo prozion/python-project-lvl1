@@ -1,11 +1,11 @@
-install:
+install
+	python -m pip install
+
+install-executables: build
 	python -m pip install --force-reinstall dist/*.whl
 
 uninstall:
 	python -m pip uninstall hexlet-code
-
-setup:
-	poetry install
 
 lint: lint-flake8
 
