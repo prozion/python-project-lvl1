@@ -1,5 +1,5 @@
 install:
-	python -m pip install
+	python -m pip install hexlet-code
 
 install-executables: build
 	python -m pip install --force-reinstall dist/*.whl
