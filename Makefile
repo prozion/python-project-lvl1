@@ -1,4 +1,4 @@
-install
+install:
 	python -m pip install
 
 install-executables: build
