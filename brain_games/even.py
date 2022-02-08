@@ -3,9 +3,10 @@ import random
 
 min_number, max_number = 3, 100
 
+
 def guess_even_number_turn():
 
-    def is_even (number):  
+    def is_even(number):
         return number % 2 == 0
 
     number = random.randint(min_number, max_number)

@@ -5,6 +5,7 @@ min_start_number, max_start_number = 1, 20
 min_step, max_step = 2, 9
 min_size, max_size = 5, 10
 
+
 def guess_progression_turn():
     start_number = random.randint(min_start_number, max_start_number)
     step = random.randint(min_step, max_step)

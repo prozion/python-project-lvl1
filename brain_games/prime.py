@@ -3,6 +3,7 @@ import random
 
 min_number, max_number = 3, 99
 
+
 def is_prime(number):
     i = 2
     while i <= number / 2:
@@ -10,6 +11,7 @@ def is_prime(number):
             return False
         i += 1
     return True
+
 
 def make_prime_turn():
     number = random.randint(min_number, max_number)

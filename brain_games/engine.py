@@ -1,5 +1,6 @@
 from brain_games.cli_dialog import ask_name
 
+
 def play(make_turn_function, description='', max_turns_count=3):
     user_name = ask_name()
     print(description)

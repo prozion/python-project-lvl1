@@ -4,16 +4,18 @@ import random
 min_number = 1
 max_number = 100
 
+
 def evaluate(op, a, b):
     if op == '+':
-            return a + b
+        return a + b
     elif op == '-':
-            return a - b
+        return a - b
     elif op == '*':
-            return a * b
+        return a * b
     else:
-            return None
-        
+        return None
+
+
 def make_calc_turn():
     a, b = random.sample(range(min_number, max_number), 2)
     op = random.choice("+-*")
