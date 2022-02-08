@@ -15,7 +15,7 @@ def ask_name():
     return name
 
 def get_user_answer(question, answer_type='number'):
-    print('My question: %s' % question)
+    print('Question: %s' % question)
     if answer_type == 'number':
         return prompt.integer('Your answer: ')
     else:
