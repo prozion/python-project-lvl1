@@ -18,9 +18,9 @@ def print_text(text, color=colorama.Fore.YELLOW):
 
 
 def play(make_turn_function, description='', max_turns_count=3):
-    user_name = ask_name()
+    # user_name = ask_name()
     print(description)
-    time.sleep(2)
+    # time.sleep(1)
     turns_count = 0
     while turns_count < max_turns_count:
         if make_turn_function():
@@ -36,7 +36,7 @@ def play(make_turn_function, description='', max_turns_count=3):
             print_star(42, True)
             return True
         turns_count += 1
-        time.sleep(1)
+        # time.sleep(1)
     print(colorama.Fore.CYAN)
     print("Alas, %s, you lost!" % user_name)
     print(colorama.Style.RESET_ALL)
