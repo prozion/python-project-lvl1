@@ -5,16 +5,6 @@ min_number = 1
 max_number = 100
 
 def evaluate(op, a, b):
-    # match-case works only for python >= 3.10.x
-    # match op:
-    #     case '+':
-    #         return a + b
-    #     case '-':
-    #         return a - b
-    #     case '*':
-    #         return a * b
-    #     case _:
-    #         return None
     if op == '+':
             return a + b
     elif op == '-':
@@ -28,5 +18,5 @@ def make_calc_turn():
     a, b = random.sample(range(min_number, max_number), 2)
     op = random.choice("+-*")
     expected_answer = evaluate(op, a, b)
-    user_answer = get_user_answer(f"{a} {op} {b} = ?")
+    user_answer = get_user_answer(f"{a} {op} {b}")
     return compare_answers(expected_answer, user_answer)

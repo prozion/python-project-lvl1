@@ -1,4 +1,4 @@
-from brain_games.cli_dialog import compare_answers, get_user_answer, POSITIVE, NEGATIVE
+from brain_games.cli_dialog import compare_answers, get_user_answer
 import random
 
 min_number, max_number = 3, 99
@@ -13,6 +13,6 @@ def is_prime(number):
 
 def make_prime_turn():
     number = random.randint(min_number, max_number)
-    expected_answer = POSITIVE if is_prime(number) else NEGATIVE
-    user_answer = get_user_answer("%i... Простое ли это число, братка?" % number, 'string')
+    expected_answer = 'yes' if is_prime(number) else 'no'
+    user_answer = get_user_answer(number, 'string')
     return compare_answers(expected_answer, user_answer)

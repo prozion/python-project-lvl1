@@ -10,5 +10,5 @@ def get_gcd(a, b):
 def make_gcd_turn():
     a, b = random.sample(range(min_number, max_number), 2)
     expected_answer = get_gcd(a, b)
-    user_answer = get_user_answer(f"What is a GCD for {a} and {b}?")
+    user_answer = get_user_answer(f"{a} {b}")
     return compare_answers(expected_answer, user_answer)
