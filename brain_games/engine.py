@@ -9,6 +9,6 @@ def play(make_turn_function, description='', max_turns_count=3):
             print("Correct!")
             correct_turns_count += 1
         else:
-            print("Let's try again, %s" % user_name)
+            print("Let's try again, %s!" % user_name)
             return False
     print("Congratulations, %s!" % user_name)
