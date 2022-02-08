@@ -24,7 +24,7 @@ tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>
 name = "colorama"
 version = "0.4.4"
 description = "Cross-platform colored terminal text."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -155,7 +155,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "2d26b145dcd525529f981ae4a7ee80f1b62884c53b779e5d092c3004b2b1cbf1"
+content-hash = "71ec23c4683f91c1c336cfc6fe9b8bee761a3b7245dbd58275e989578f0ef3d7"
 
 [metadata.files]
 atomicwrites = [
